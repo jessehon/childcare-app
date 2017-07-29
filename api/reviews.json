@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "targetType": "user",
+    "targetId": 1,
+    "userId": 1,
+    "body": "Paddington Bear Studio is a delightful, peaceful daycare to send my two little ones. Cozy location nestled into the trees with very caring staff."
+  },
+  {
+    "id": 2,
+    "targetType": "user",
+    "targetId": 1,
+    "userId": 1,
+    "body": "This daycare is great value! My child is so loved and cared for. I will be sending my next shortly."
+  },
+  {
+    "id": 3,
+    "targetType": "center",
+    "targetId": 1,
+    "userId": 1,
+    "body": "My George is getting a getting a fine education here."
+  }
+]

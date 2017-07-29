@@ -1,0 +1,23 @@
+<div class="center-header m-b-20">
+  <div class="center-header__left">
+    <img src="{{ center.avatarUrl }}" alt="..." class="center-avatar img-rounded">
+  </div>
+
+  <div class="center-header__right">
+    <h2 class="center-header__name">
+      {{ center.name }}<br />
+      <small>{{ center.location }}</small>
+    </h2>
+
+    <div class="center-rating">
+      <select class="rating-select center-rating-select" name="rating" data-current-rating="{{ center.rating }}" autocomplete="off">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+</div>

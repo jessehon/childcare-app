@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Smith",
+    "location": "Sydney",
+    "avatarUrl": "https://placehold.it/300x300",
+    "rating": 3.6
+  },
+  {
+    "id": 2,
+    "name": "Janice Longe",
+    "location": "Sydney",
+    "avatarUrl": "https://placehold.it/300x300",
+    "rating": 4.2
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Paddington Bear Studio",
+    "location": "Sydney",
+    "avatarUrl": "https://placehold.it/300x300",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "name": "Pooh Bear Studio",
+    "location": "Sydney",
+    "avatarUrl": "https://placehold.it/300x300",
+    "rating": 2.3
+  }
+]

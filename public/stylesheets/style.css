@@ -309,8 +309,32 @@ body {
     margin-top: 0;
     font-size: 24px; }
 
+.center-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .center-header__left {
+    flex: 0;
+    text-align: left; }
+  .center-header__right {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 250px;
+    text-align: left; }
+  .center-header__name {
+    margin-top: 0;
+    font-size: 24px; }
+
 .user-avatar {
   width: 100px; }
+  .user-avatar--small {
+    width: 50px; }
+
+.center-avatar {
+  width: 100px; }
+  .center-avatar--small {
+    width: 50px; }
 
 .feedback-form {
   text-align: center; }
@@ -322,5 +346,21 @@ body {
     margin-top: 0; }
   .feedback-form__review-rating {
     text-align: center; }
+
+.review-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .review-item__left {
+    flex: 0;
+    text-align: left; }
+  .review-item__right {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left; }
+  .review-item__name {
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,16 @@
 <div class="user-header m-b-20">
   <div class="user-header__left">
-    <img src="https://placehold.it/300x300" alt="..." class="user-avatar img-circle">
+    <img src="{{ user.avatarUrl }}" alt="..." class="user-avatar img-circle">
   </div>
 
   <div class="user-header__right">
     <h2 class="user-header__name">
-      Jane Smith<br />
-      <small>Location</small>
+      {{ user.name }}<br />
+      <small>{{ user.location }}</small>
     </h2>
 
     <div class="user-rating">
-      <select class="rating-select user-rating-select" name="rating" data-current-rating="3.6" autocomplete="off">
+      <select class="rating-select user-rating-select" name="rating" data-current-rating="{{ user.rating }}" autocomplete="off">
         <option value=""></option>
         <option value="1">1</option>
         <option value="2">2</option>

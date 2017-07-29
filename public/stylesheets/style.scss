@@ -49,8 +49,44 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
+.center-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &__left {
+    flex: 0;
+    text-align: left;
+  }
+
+  &__right {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 250px;
+    text-align: left;
+  }
+
+  &__name {
+    margin-top: 0;
+    font-size: 24px;
+  }
+}
+
 .user-avatar {
   width: 100px;
+
+  &--small {
+    width: 50px;
+  }
+}
+
+.center-avatar {
+  width: 100px;
+
+  &--small {
+    width: 50px;
+  }
 }
 
 .feedback-form {
@@ -68,5 +104,28 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
   &__review-rating {
     text-align: center;
+  }
+}
+
+.review-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &__left {
+    flex: 0;
+    text-align: left;
+  }
+
+  &__right {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  &__name {
+    font-weight: bold;
   }
 }
