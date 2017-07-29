@@ -1,7 +1,14 @@
 $(function() {
-  $('.rating-select').barrating({
-    theme: 'fontawesome-stars-o',
-    showSelectedRating: false,
+
+  _.each($('.rating-select'), function(elm) {
+    var $elm = $(elm);
+    var currentRating = $elm.data('current-rating');
+
+    $elm.barrating({
+      theme: 'fontawesome-stars-o',
+      showSelectedRating: false,
+      initialRating: currentRating,
+    });
   });
 
   $('#feedback-form').submit( function (event) {

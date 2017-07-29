@@ -1,4 +1,12 @@
+$title-font-size: 32px;
+$body-font-size: 16px;
+
+h1 {
+  font-size: $title-font-size;
+}
+
 body {
+  font-size: $body-font-size;
 }
 
 // Margin/Padding helper classes
@@ -21,22 +29,44 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   &__left {
     flex: 0;
-    flex-basis: 200px;
-    padding: 10px;
-
-    text-align: center;
+    text-align: left;
   }
 
   &__right {
     flex: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    max-width: 250px;
+    text-align: left;
+  }
+
+  &__name {
+    margin-top: 0;
+    font-size: 24px;
   }
 }
 
 .user-avatar {
   width: 100px;
+}
+
+.feedback-form {
+  text-align: center;
+
+  &__control-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  &__help-block {
+    margin-top: 0;
+  }
+
+  &__review-rating {
+    text-align: center;
+  }
 }

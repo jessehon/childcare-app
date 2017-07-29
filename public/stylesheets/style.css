@@ -1,3 +1,9 @@
+h1 {
+  font-size: 32px; }
+
+body {
+  font-size: 16px; }
+
 .m-t-5 {
   margin-top: 5px !important; }
 
@@ -289,18 +295,32 @@
 .user-header {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .user-header__left {
     flex: 0;
-    flex-basis: 200px;
-    padding: 10px;
-    text-align: center; }
+    text-align: left; }
   .user-header__right {
     flex: 1;
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    margin-left: 20px;
+    max-width: 250px;
+    text-align: left; }
+  .user-header__name {
+    margin-top: 0;
+    font-size: 24px; }
 
 .user-avatar {
   width: 100px; }
+
+.feedback-form {
+  text-align: center; }
+  .feedback-form__control-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .feedback-form__help-block {
+    margin-top: 0; }
+  .feedback-form__review-rating {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
