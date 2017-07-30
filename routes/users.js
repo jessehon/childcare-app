@@ -31,7 +31,9 @@ router.get('/:userId', function(req, res, next) {
 router.get('/:userId/feedback', function(req, res, next) {
   var user = _.find(users, {id: userId});
 
-  res.render('user-feedback');
+  res.render('user-feedback', {
+    user: user
+  });
 });
 
 module.exports = router;

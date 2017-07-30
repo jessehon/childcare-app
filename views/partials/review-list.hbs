@@ -1,5 +1,11 @@
 <div class="review-list">
-  {{#each reviews as |review| }}
-    {{> review_item review=review }}
-  {{/each}}
+  {{#if reviews.length}}
+    {{#each reviews as |review| }}
+      {{> review_item review=review }}
+    {{/each}}
+  {{else}}
+    <div class="empty-block">
+      No reviews yet
+    </div>
+  {{/if}}
 </div>
