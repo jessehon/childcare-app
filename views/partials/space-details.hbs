@@ -3,14 +3,14 @@
     <div class="col-xs-6">
       <div class="space-detail">
         <div class="space-detail__label">Distance</div>
-        <div class="space-detail__value">1.1 km</div>
+        <div class="space-detail__value">{{ space.distance }} km</div>
       </div>
     </div>
 
     <div class="col-xs-6">
       <div class="space-detail">
         <div class="space-detail__label">Hourly rate</div>
-        <div class="space-detail__value">$6.20</div>
+        <div class="space-detail__value">${{ space.hourlyRate }}</div>
       </div>
     </div>
   </div>
@@ -19,14 +19,28 @@
     <div class="col-xs-6">
       <div class="space-detail">
         <div class="space-detail__label">Capacity</div>
-        <div class="space-detail__value">Available (4/6)</div>
+        <div class="space-detail__value">
+          {{#ifCond space.childCount '<' space.childCapacity}}
+            Available
+          {{else}}
+            Full
+          {{/ifCond}}
+          ({{ space.childCount }}/{{ space.childCapacity }})
+        </div>
       </div>
     </div>
 
     <div class="col-xs-6">
       <div class="space-detail">
-        <div class="space-detail__label">Hourly rate</div>
-        <div class="space-detail__value">2 hr ($12.40)</div>
+        <div class="space-detail__label">Min time</div>
+        <div class="space-detail__value">
+          {{#if space.minHours}}
+            {{ space.minHours }} hr
+          {{else}}
+            1 day
+          {{/if}}
+          (${{ space.dailyRate }})
+        </div>
       </div>
     </div>
   </div>

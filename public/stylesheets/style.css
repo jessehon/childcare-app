@@ -4,6 +4,19 @@ body {
   letter-spacing: 1px;
   font-size: 16px; }
 
+.page__content {
+  padding-top: 20px; }
+  .page__content--fullscreen {
+    background: linear-gradient(135deg, #6DF6D1 0%, #3BAECA 50.05%, #513AE9 100%);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh; }
+  .page__content--centered {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
 .btn {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
@@ -412,7 +425,8 @@ h1 {
 .section {
   background-color: white;
   border: 1px solid black;
-  padding: 32px; }
+  padding: 32px;
+  margin-bottom: 32px; }
   .section__cta {
     text-align: center; }
 

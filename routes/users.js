@@ -29,6 +29,7 @@ router.get('/:userId', function(req, res, next) {
 });
 
 router.get('/:userId/feedback', function(req, res, next) {
+  var userId = _.toNumber(req.params.userId);
   var user = _.find(users, {id: userId});
 
   res.render('user-feedback', {

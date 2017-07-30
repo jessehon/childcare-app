@@ -1,31 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <h2 class="section-title">Overview</h2>
-      <div class="section">
-        <h2 class="space-title">
-          a little play space<br />
-          <small>this space has an opening</small>
-        </h2>
+<div class="page__content">
+  <div class="container">
+    <div>
+      <a href="/browse" class="btn btn-primary">
+        <i class="fa fa-chevron-left"></i> Back
+      </a>
+    </div>
 
-        {{> user_header user=user }}
-      </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2 class="section-title">Overview</h2>
+        <div class="section">
+          <h2 class="space-title">
+            a little play space<br />
+            <small>this space has an opening</small>
+          </h2>
+          {{> user_header user=user }}
+        </div>
 
-      <h2 class="section-title">Details</h2>
-      <div class="section">
-        {{> space_details space=user }}
-        <div class="section__cta">
-          <a href="#" class="btn btn-primary">
-            Contact space
-          </a>
+        <h2 class="section-title">Details</h2>
+        <div class="section">
+          {{> space_details space=user }}
+          <div class="section__cta">
+            <a href="#" class="btn btn-primary">
+              Contact space
+            </a>
+          </div>
+        </div>
+
+        <h2 class="section-title">Reviews</h2>
+        <div class="section">
+          {{> review_list reviews=reviews }}
         </div>
       </div>
-
-      <h2 class="section-title">Reviews</h2>
-      <div class="section">
-        {{> review_list reviews=reviews }}
-      </div>
     </div>
-  </div>
 
+  </div>
 </div>
