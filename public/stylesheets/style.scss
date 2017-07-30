@@ -14,9 +14,22 @@ body {
 .page {
   &__content {
     padding-top: 20px;
+
+    &--fullscreen {
+      background: linear-gradient(135deg, #6DF6D1 0%, #3BAECA 50.05%, #513AE9 100%);
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+    }
+
+    &--centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
-
 
 .btn {
   font-family: 'Raleway', sans-serif;
