@@ -7,7 +7,7 @@ var centers = require('../api/centers.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'My Child Space' });
+  res.render('index', { title: 'Little Play Space' });
 });
 
 router.get('/browse', function(req, res, next) {
