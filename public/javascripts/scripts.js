@@ -279,14 +279,16 @@ $(function() {
       var center = _.find(centers, {id: _.toNumber(centerProps.id)});
       // var center = _.sample(centers);
 
-      return '<img class="center-avatar center-avatar--xs" src="' + center.avatarUrl + '" /> <a href="/centers/' + center.id + '" class="">' + center.name + '</a>';
+      var isAvailable = (center.childCount < center.childCapacity);
+      return '<img class="center-avatar center-avatar--xs" src="' + center.avatarUrl + '" /> <a href="/centers/' + center.id + '" class="">' + center.name + '</a><br />Rating: ' + center.rating + '<br />Capacity: ' + (isAvailable? 'Available' : 'Full');
     }
 
     function getHtmlForCarerPopup(carerProps) {
       var user = _.find(users, {id: _.toNumber(carerProps.id)});
       // var user = _.sample(users);
 
-      return '<img class="user-avatar user-avatar--xs" src="' + user.avatarUrl + '" /> <a href="/users/' + user.id + '" class="">' + user.name + '</a>';
+      var isAvailable = (user.childCount < user.childCapacity);
+      return '<img class="user-avatar user-avatar--xs" src="' + user.avatarUrl + '" /> <a href="/users/' + user.id + '" class="">' + user.name + '</a><br />Rating: ' + user.rating + '<br />Capacity: ' + (isAvailable? 'Available' : 'Full');
     }
   }
 });
