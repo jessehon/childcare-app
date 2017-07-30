@@ -11,6 +11,12 @@ body {
   font-size: $body-font-size;
 }
 
+.page {
+  &__content {
+    padding-top: 20px;
+  }
+}
+
 
 .btn {
   font-family: 'Raleway', sans-serif;
@@ -33,7 +39,6 @@ h5 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
 }
-
 
 h1 {
   font-size: $title-font-size;
@@ -201,6 +206,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   background-color: white;
   border: 1px solid black;
   padding: 32px;
+  margin-bottom: 32px;
 
   &__cta {
     text-align: center;

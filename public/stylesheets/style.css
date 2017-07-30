@@ -4,6 +4,9 @@ body {
   letter-spacing: 1px;
   font-size: 16px; }
 
+.page__content {
+  padding-top: 20px; }
+
 .btn {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
@@ -412,7 +415,8 @@ h1 {
 .section {
   background-color: white;
   border: 1px solid black;
-  padding: 32px; }
+  padding: 32px;
+  margin-bottom: 32px; }
   .section__cta {
     text-align: center; }
 
