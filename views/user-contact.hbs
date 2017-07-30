@@ -1,0 +1,61 @@
+<div class="page__content">
+  <div class="container">
+    <div>
+      <a href="/browse" class="btn btn-primary">
+        <i class="fa fa-chevron-left"></i> Back
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="text-center">
+          <h1>Contact {{ user.name }}</h1>
+        </div>
+
+        <h2 class="section-title">Space</h2>
+        <div class="section">
+          {{> user_header user=user }}
+        </div>
+
+        <h2 class="section-title">Contact</h2>
+        <div class="section">
+          <form id="contact-form" class="contact-form text-center" action="">
+            <div class="form-group">
+              <label class="control-label contact-form__control-label" for="">Your name</label>
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label contact-form__control-label" for="">Your child's name</label>
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label contact-form__control-label" for="">Contact email</label>
+              <input class="form-control" type="email" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label contact-form__control-label" for="">Contact number</label>
+              <input class="form-control" type="tel" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label contact-form__control-label" for="">Additional notes</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="text-center m-b-20">
+            <button class="btn btn-primary" type="submit" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

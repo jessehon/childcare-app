@@ -24,6 +24,19 @@ $(function() {
     );
   });
 
+  // Contact form
+  $('#contact-form').submit( function (event) {
+    event.preventDefault();
+
+    swal(
+      {
+        title: "Perfect!",
+        type: "success",
+        text: "We'll let you know as soon as we hear back",
+      }
+    );
+  });
+
   if ($('#map').length) {
     // Mapbox
     mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc2Vob24iLCJhIjoiY2o1cDJ2b3V5MDVzODMzcXB3eGR6N2MwciJ9.R880cN3dpRkxr0XujMsbzQ';

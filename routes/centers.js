@@ -24,4 +24,14 @@ router.get('/:centerId', function(req, res, next) {
   });
 });
 
+router.get('/:centerId/contact', function(req, res, next) {
+  var centerId = _.toNumber(req.params.centerId);
+  var center = _.find(centers, {id: centerId});
+
+  res.render('center-contact', {
+    center: center,
+  });
+});
+
+
 module.exports = router;
