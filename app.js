@@ -5,15 +5,21 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
+var hbs = require('hbs');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var centers = require('./routes/centers');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerHelper('json', function(context) {
+  return JSON.stringify(context);
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -24,13 +30,14 @@ app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  indentedSyntax: true, // true = .sass and false = .scss
+  indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/centers', centers);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
